@@ -1,79 +1,45 @@
 int equalArrays(int n, int m, vector<int> a, vector<int> b)
 {
-    // Write your code here
-    int s1 = 0, s2 = 0;
-    for (int i = 0; i < n; i++)
-        s1 += a[i];
-    for (int i = 0; i < m; i++)
-        s2 += b[i];
+    int s1 = 0;
+    int s2 = 0;
+
+    for (auto it : a)
+        s1 += it;
+    for (auto it : b)
+        s2 += it;
+
     if (s1 != s2)
         return -1;
 
-    if (a[0] == 4 && b[0] == 1)
-        return 1;
-    if (a[0] == 2 && b[0] == 2)
-        return 2;
-    if (a[0] == 3 && b[0] == 4)
-        return 1;
-    if (a[0] == 4 && b[0] == 3)
-        return 4;
+    int left = 0;
+    int right = 0;
+    int len = 0;
 
-    vector<int> ans;
-    int i = 0, j = 0;
-
-    while (i < n && j < m)
+    while (left < n && right < m)
     {
-        if (a[i] == b[j])
-        {
-            ans.push_back(a[i]);
-            i++;
-            j++;
-        }
-        else if (a[i] < b[j])
-        {
-            while (a[i] != b[j])
-            {
-                i++;
-                a[i] = a[i - 1] + a[i];
+        s1 = a[left];
+        s2 = b[right];
+        left++;
+        right++;
 
-                if (a[i] > b[j])
-                    return -1;
-            }
-            ans.push_back(a[i]);
-            i++;
-            j++;
-        }
-        else if (a[i] < b[j])
+        while (s1 != s2)
         {
-            while (a[i] != b[j])
+            if (s1 < s2)
             {
-                i++;
-                a[i] = a[i - 1] + a[i];
-
-                if (a[i] > b[j])
-                    return -1;
+                s1 += a[left];
+                left++;
             }
-            ans.push_back(a[i]);
-            i++;
-            j++;
-        }
-        else
-        {
-            while (a[i] != b[j])
+            else if (s2 < s1)
             {
-                j++;
-                b[j] = b[j - 1] + b[j];
-
-                if (b[j] > a[i])
-                    return -1;
+                s2 += b[right];
+                right++;
             }
-            ans.push_back(a[i]);
-            i++;
-            j++;
         }
+
+        len++;
     }
 
-    return ans.size();
+    return len;
 }
 
 // https: // www.codingninjas.com/studio/problems/day-21-aus-vs-ned-balancing-teams_10164609?challengeSlug=coding-world-cup&leftPanelTabValue=SUBMISSION
