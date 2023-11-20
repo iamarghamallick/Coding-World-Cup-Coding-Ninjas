@@ -1,6 +1,6 @@
 # Coding World Cup Solutions Repository
 
-<center><img href="https://github.com/iamarghamallick/Coding-World-Cup-Coding-Ninjas/assets/86346861/e7bace15-8d1e-47cb-9eff-254539c3f999"></img></center>
+![AIR 210](https://github.com/iamarghamallick/Coding-World-Cup-Coding-Ninjas/assets/86346861/e7bace15-8d1e-47cb-9eff-254539c3f999)
 
 Welcome to my Coding World Cup Solutions repository! 🚀 In this collection, you'll find my solutions to the challenges encountered during the Coding World Cup journey at Coding Ninjas. Each folder corresponds to a specific day or stage, showcasing my problem-solving skills and the evolution of my coding proficiency.
 
@@ -20,7 +20,6 @@ Finished at Stage 9! 🎉 Successfully completed all challenges up to this stage
 
 
 ## Coding World Cup Finale
-![AIR 210](https://github.com/iamarghamallick/Coding-World-Cup-Coding-Ninjas/assets/86346861/e7bace15-8d1e-47cb-9eff-254539c3f999)
 
 - At the end I secured **AIR 210** in the ***Coding World Cup Finale!*** 🏆💻 Grateful for the incredible challenges, fierce competition, and the honor of receiving the ***'Man of the Match'*** award **3** times in a row. A journey of **perseverance**, **passion**, and **coding excellence**! 🚀
 
