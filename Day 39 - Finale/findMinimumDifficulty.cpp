@@ -28,4 +28,4 @@ long long findMinimumDifficulty(int n, int k, vector<int> a)
     return ans;
 }
 
-// https: // www.codingninjas.com/studio/problems/day-39-ind-vs-nz-virat-s-boundaries_10364343?challengeSlug=coding-world-cup-2023-finale
+// https://www.codingninjas.com/studio/problems/day-39-ind-vs-nz-virat-s-boundaries_10364343?challengeSlug=coding-world-cup-2023-finale

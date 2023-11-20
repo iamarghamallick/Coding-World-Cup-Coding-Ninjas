@@ -22,4 +22,4 @@ string directionGame(int n, string &s)
         return "SOUTH";
 }
 
-// https: // www.codingninjas.com/studio/problems/day-39-ind-vs-ned-final-direction-game_10346238?challengeSlug=coding-world-cup
+// https://www.codingninjas.com/studio/problems/day-39-ind-vs-ned-final-direction-game_10346238?challengeSlug=coding-world-cup
